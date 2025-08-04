@@ -1,12 +1,65 @@
-# React + Vite
+# 📝 Blog App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive blog application built using **React**, **Redux**, **React Router**, and **Tailwind CSS**, with JWT-based authentication and rich blogging features like search, filtering, and infinite scroll. This app uses **dummy APIs** to simulate a full-stack blogging platform.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- 🔐 **JWT Authentication**
+  - Login, Register, and Logout flows
+  - Token stored in memory or `localStorage`
+  - Private and Public route handling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🧠 **State Management**
+  - `useAuth` hook: Manages user auth state (login, logout, user info, isAuthenticated)
+  - `usePosts` hook: Handles fetching, creating, editing, deleting blog posts
+  - `AuthContext` and `PostContext` used alongside Redux
+
+- 📄 **Blog Management**
+  - Create, edit, delete blogs
+  - Rich Text Editor for writing blogs
+  - View single blog in detail
+
+- 🔎 **Search & Filter**
+  - Search by title or content
+  - Filter by tags or author
+
+- **Styling with Tailwind CSS**
+  - Consistent design using a custom color palette
+  - Fully responsive across all devices
+
+- **UX Enhancements**
+  - Lazy loading / Infinite scroll for blog listing
+  - Loading spinners for async actions
+  - Custom form validation and feedback
+
+- 🔐 **Route Protection**
+  - `/dashboard`, `/posts/create`, `/posts/edit/:id` protected using `PrivateRoute`
+  - `/login`, `/register` protected using `PublicRoute` to prevent access when authenticated
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech            | Purpose                            |
+|-----------------|------------------------------------|
+| React           | UI Library                         |
+| Redux           | Global State Management            |
+| React Router    | Client-side Routing                |
+| Tailwind CSS    | Utility-first CSS Framework        |
+| JWT             | Authentication (Simulated)         |
+
+---
+## 📁 Project Installation 
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/diyaaahh/Blog-App.git
+cd Blog-App
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the application
+npm start
