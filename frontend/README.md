@@ -57,6 +57,7 @@ A modern, responsive blog application built using **React**, **Redux**, **React 
 # 1. Clone the repository
 git clone https://github.com/diyaaahh/Blog-App.git
 cd Blog-App
+cd frontend
 
 # 2. Install dependencies
 npm install
