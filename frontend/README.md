@@ -14,7 +14,7 @@ A modern, responsive blog application built using **React**, **Redux**, **React 
 - 🧠 **State Management**
   - `useAuth` hook: Manages user auth state (login, logout, user info, isAuthenticated)
   - `usePosts` hook: Handles fetching, creating, editing, deleting blog posts
-  - `AuthContext` and `PostContext` used alongside Redux
+  - `AuthContext` and `PostContext` used 
 
 - 📄 **Blog Management**
   - Create, edit, delete blogs
@@ -45,7 +45,7 @@ A modern, responsive blog application built using **React**, **Redux**, **React 
 | Tech            | Purpose                            |
 |-----------------|------------------------------------|
 | React           | UI Library                         |
-| Redux           | Global State Management            |
+| Context API     | Global State Management            |
 | React Router    | Client-side Routing                |
 | Tailwind CSS    | Utility-first CSS Framework        |
 | JWT             | Authentication (Simulated)         |
